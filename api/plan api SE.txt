@@ -1,0 +1,39 @@
+Table évenements :
+   id :
+   Nom de l'event :
+   Nombre de place :
+      Event visible :
+
+Table réservation :
+   id :
+   id_event :
+   id_groupe :
+   nom : 
+   prénom :
+   mail :
+   valide :
+   token mail :
+   commande :
+
+Table groupe Fordboyard
+   id : 
+   nom du groupe :
+   id_respo :
+   valide :
+   token mail :
+
+
+Hypnotiseur :
+getPlaces(id_event) --> nombre de place
+insertEntry(id_event, nom, prenom, mail) --> void
+validate(nom, prenom, token_mail) --> valide = 1
+
+Fort Boyard :
+getPlaces(id_event) --> nombre de place
+createGroup(nom_groupe, nom1, prenom1, mail1) --> void
+insertEntry(id_event, id_groupe, nom_groupe, nom1, prenom1, mail1, nom2, prenom2, mail2, nom3, prenom3, mail3, nom4, prenom4, mail4, nom5, prenom5, mail5) --> void
+validate(id_groupe, token_mail) --> valide = 1
+
+PetitDej :
+insertEntry(id_event, nom, prenom, mail, commande) --> void
+validate(nom, prenom, token_mail) --> valide = 1
